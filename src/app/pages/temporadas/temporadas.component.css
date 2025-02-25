@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Encabezado */
+  .imagen-header {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .imagen-header img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .overlay p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+  }
+  
+  /* Sección de temporadas */
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .temporadas-destacadas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .temporada {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .temporada:hover {
+    transform: translateY(-10px);
+  }
+  
+  .temporada h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .temporada p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }

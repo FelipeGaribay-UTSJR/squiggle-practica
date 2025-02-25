@@ -1,0 +1,16 @@
+<h3>Equipos</h3>
+
+<div class="row">
+  @for (equipo of equipos; track equipo.id) {
+    <div class="col-md-4">
+      <div class="card equipo-card">
+        <img class="card-img-top equipo-logo" [src]="'https://squiggle.com.au' + equipo.logo" alt="{{ equipo.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ equipo.name }} ({{ equipo.abbrev }})</h5>
+          <p class="card-text"><strong>Debut:</strong> {{ equipo.debut }}</p>
+          <p class="card-text"><strong>Retiro:</strong> {{ equipo.retirement === 9999 ? 'Activo' : equipo.retirement }}</p>
+        </div>
+      </div>
+    </div>
+  }
+</div>
